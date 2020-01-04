@@ -138,7 +138,6 @@
       yum install -y ansible git
       cat > /root/hosts <<EOF
       [compute]
-      $(hostname)
       $(hostname -f)
       EOF
       mkdir /etc/ansible/facts.d/
