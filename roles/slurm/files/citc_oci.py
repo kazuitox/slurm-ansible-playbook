@@ -166,6 +166,9 @@ def get_images() -> Dict[str, Dict[str, str]]:
             "uk-london-1": "ocid1.image.oc1.uk-london-1.aaaaaaaap5kk2lbo5lj3k5ff5tl755a4cszjwd6zii7jlcp6nz3gogh54wtq",
             "us-ashburn-1": "ocid1.image.oc1.iad.aaaaaaaab5l5wv7njknupfxvyynplhsygdz67uhfaz35nsnhsk3ufclqjaea",
             "us-phoenix-1": "ocid1.image.oc1.phx.aaaaaaaahu7hv6lqbdyncgwehipwsuh3htfuxcoxbl4arcetx6hzixft366a",
+            "ap-tokyo-1": "ocid1.image.oc1.ap-tokyo-1.aaaaaaaausgqsubrbtjavzkvo7c6ppmezyi5vs4pmnohipwb3rr7wjepd3aa",
+            "ap-osaka-1": "ocid1.image.oc1.ap-osaka-1.aaaaaaaa6qe6msdcz7rh5t542po3ijkd37dhwqa3iidr6a3qf3tlbf75uwja",
+            "ap-seoul-1": "ocid1.image.oc1.ap-seoul-1.aaaaaaaa7mv4v6itxjaswuash35hbn5ighbzre7nqih64e6q4mfbjq6jifja",
         },
         "Oracle-Linux-7.6-2019.02.20-0": {
             "ca-toronto-1": "ocid1.image.oc1.ca-toronto-1.aaaaaaaa7ac57wwwhputaufcbf633ojir6scqa4yv6iaqtn3u64wisqd3jjq",
@@ -173,7 +176,8 @@ def get_images() -> Dict[str, Dict[str, str]]:
             "uk-london-1": "ocid1.image.oc1.uk-london-1.aaaaaaaarruepdlahln5fah4lvm7tsf4was3wdx75vfs6vljdke65imbqnhq",
             "us-ashburn-1": "ocid1.image.oc1.iad.aaaaaaaannaquxy7rrbrbngpaqp427mv426rlalgihxwdjrz3fr2iiaxah5a",
             "us-phoenix-1": "ocid1.image.oc1.phx.aaaaaaaacss7qgb6vhojblgcklnmcbchhei6wgqisqmdciu3l4spmroipghq",
-            "ap-tokyo-1": "ocid1.image.oc1.ap-tokyo-1.aaaaaaaairi7u3txkamxlw3kmw3dosbesrlm22vsh7yybhygzafd3awhlr5q",
+            "ap-tokyo-1": "ocid1.image.oc1.ap-tokyo-1.aaaaaaaarl7op6ken6hpevfwuevfnt6ic3tlhitu7pct2py5uxdzyvqb5mkq",
+            "ap-osaka-1": "ocid1.image.oc1.ap-osaka-1.aaaaaaaax5uq2w46tdmotc4wqcqyfc44zoir2muzxshimgs7b2klgog2j3ga",
             "ap-seoul-1": "ocid1.image.oc1.ap-seoul-1.aaaaaaaacdrxj4ktv6qilozzc7bkhcrdlzri2gw4imlljpg255stxvkbgpnq",
         },
     }
