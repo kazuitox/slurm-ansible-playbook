@@ -77,7 +77,7 @@ def test_get_subnet(requests_mocker, oci_config):
     data = [
         oci.core.models.Subnet(id="blah", display_name="Subnetblah"),
         oci.core.models.Subnet(id="blah", display_name="Subnetfoo"),
-        oci.core.models.Subnet(id=subnet_id, display_name="Subnet"),
+        oci.core.models.Subnet(id=subnet_id, display_name="Private"),
     ]
 
     requests_mocker.register_uri(
@@ -112,7 +112,7 @@ def test_get_node_state(states, expected, mocker, requests_mocker, oci_config):
 
 
 def test_create_node_config(mocker, requests_mocker, oci_config, nodespace):
-    subnets = [oci.core.models.Subnet(id="ocid0..subnet", display_name="Subnet")]
+    subnets = [oci.core.models.Subnet(id="ocid0..subnet", display_name="Private")]
     requests_mocker.register_uri(
         "GET",
         "/20160918/subnets?compartmentId=ocid1.compartment.oc1..aaaaa&vcnId=ocid1.vcn.oc1..aaaaa",

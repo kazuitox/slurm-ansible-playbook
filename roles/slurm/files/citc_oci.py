@@ -28,7 +28,7 @@ def get_subnet(oci_config, compartment_id: str, vcn_id: str) -> str:
     """
     Get the relevant cluster subnet for a given compartment, VCN and AD
     """
-    return [s.id for s in oci.core.VirtualNetworkClient(oci_config).list_subnets(compartment_id, vcn_id=vcn_id).data if s.display_name == "Subnet"][0]
+    return [s.id for s in oci.core.VirtualNetworkClient(oci_config).list_subnets(compartment_id, vcn_id=vcn_id).data if s.display_name == "Private"][0]
 
 
 def get_node_state(oci_config, log, compartment_id: str, hostname: str) -> str:
