@@ -79,7 +79,7 @@
     path: /etc/telegraf/telegraf.conf
     section: "[outputs.influxdb]"
     option: urls
-    value: '["http://mgmt:8086"]'
+    value: '["http://mgmt.subnet:8086"]'
     backup: yes
   notify: restart telegraf
 
