@@ -115,6 +115,16 @@
   notify:
     - restart slurmd
 
+- name: gres config file
+  template:
+    src: gres.conf.j2
+    dest: /etc/slurm/gres.conf
+    owner: slurm
+    group: slurm
+    mode: 0400
+  notify:
+    - restart slurmd
+
 - name: set slurm log directory permissions
   file:
     path: /var/log/slurm/
