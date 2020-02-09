@@ -185,12 +185,12 @@
     enabled: yes
   when: slurm_role == "mgmt"
 
-- name: start service slurmd
-  service:
-    name: slurmd
-    state: started
-    enabled: yes
-  when: slurm_role == "compute"
+#- name: start service slurmd
+#  service:
+#    name: slurmd
+#    state: started
+#    enabled: yes
+#  when: slurm_role == "compute"
 
 # As of Slurm 18.08 the slurmdbd service doesn't become available immediately
 # This ensures that the service is available before continuing
