@@ -122,8 +122,6 @@
     owner: slurm
     group: slurm
     mode: 0400
-  notify:
-    - restart slurmd
 
 - name: set slurm log directory permissions
   file:
