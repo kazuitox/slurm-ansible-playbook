@@ -1,0 +1,5 @@
+- name: ensure OCI doesn't update /etc/resolv.conf
+  lineinfile:
+    path: /etc/oci-hostname.conf
+    regexp: '^PRESERVE_HOSTINFO'
+    line: 'PRESERVE_HOSTINFO=2'
