@@ -4,4 +4,4 @@
     name: '*'
     security: yes
     state: latest  # noqa 403
-    exclude: kernel*, shim-x64-15-2
+    exclude: kernel*, shim-x64-15-2, shim-x64
