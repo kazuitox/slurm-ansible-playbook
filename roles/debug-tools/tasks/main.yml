@@ -12,13 +12,14 @@
       - htop
       - iotop
       - lsof
-      - rsync
+      #- rsync
       - screen
       - sysstat
       - tcpdump
       - traceroute
       - wget
-      - nmap
-      - git
-      - cmake
+      #- nmap
+      #- git
+      #- cmake
       - tree
+      - dstat
