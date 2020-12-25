@@ -54,7 +54,7 @@ def create_node_config(oci_config, hostname: str, ip: Optional[str], nodespace: 
     ad = f"{nodespace['ad_root']}{ad_number}"
     shape = [f for f in features if f.startswith("shape=")][0].split("=")[1].strip()
     subnet = get_subnet(oci_config, nodespace["compartment_id"], nodespace["vcn_id"])
-    image_name = "Oracle-Linux-7.6-Gen2-GPU-2019.02.20-0" if "GPU" in shape else "Oracle-Linux-7.6-2019.02.20-0"
+    image_name = "Oracle-Linux-7.9-Gen2-GPU-2020.11.10-0" if "GPU" in shape else "Oracle-Linux-7.9-2020.11.10-1"
     image = get_images()[image_name][nodespace["region"]]
 
     with open("/home/slurm/bootstrap.sh", "rb") as f:
