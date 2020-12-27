@@ -19,6 +19,6 @@
   when: "'disabled' in dirsrv_unit_list.stdout"
 
 - name: Enable service dirsrv
-  service:
+  systemd:
     name: dirsrv@mgmt.service
     enabled: yes
