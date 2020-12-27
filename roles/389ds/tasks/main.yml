@@ -17,3 +17,8 @@
 - name: run setup-ds.pl
   command: setup-ds.pl --silent --file=/root/389ds.inf
   when: "'disabled' in dirsrv_unit_list.stdout"
+
+- name: Enable service dirsrv
+  service:
+    name: dirsrv@mgmt.service
+    enabled: yes
