@@ -12,7 +12,7 @@ slurm_partitions:
     nodelist: ALL
     default: YES
 
-filesystem_target_address: fileserver.subnet.clustervcn.oraclevcn.com
+filesystem_target_address: fileserver.private.clustervcn.oraclevcn.com
 filesystem_mount_point: /shared
 
 ansible_pull_repo: https://github.com/kazuitox/slurm-ansible-playbook.git
