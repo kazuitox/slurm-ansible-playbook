@@ -13,6 +13,9 @@
     state: started
     enabled: yes
 
+- name: add auth option
+  shell: echo "default-authentication-plugin=mysql_native_password" >> /etc/my.cnf
+
 - name: create slurm accounting database
   mysql_db:
     name: slurmacct
