@@ -9,7 +9,7 @@
 
 - name: start service mariadb
   service:
-    name: mariadb
+    name: mysqld
     state: started
     enabled: yes
 
